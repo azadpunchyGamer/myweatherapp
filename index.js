@@ -1,6 +1,6 @@
 const http = require('http');
 
-const server = http.createserver(('req','res')=>{
+const server = http.createServer((req,res)=>{
   if (req.url == '/') {
     res.end("Hello World");
   };
